@@ -337,8 +337,8 @@ var Swipeout = (0, _createReactClass2.default)({
   _openRight: function _openRight() {
     var _this3 = this;
 
-    let btnWidth = this.props.buttonWidth || (width/5);
     this.refs.swipeoutContent.measure(function (ox, oy, width, height) {
+      var btnWidth = _this3.props.buttonWidth || (width/5);
       _this3.setState({
         btnWidth,
         btnsRightWidth: _this3.props.right ? btnWidth * _this3.props.right.length : 0
@@ -358,8 +358,8 @@ var Swipeout = (0, _createReactClass2.default)({
   _openLeft: function _openLeft() {
     var _this4 = this;
     
-    var btnWidth = this.props.buttonWidth || (width/5);
     this.refs.swipeoutContent.measure(function (ox, oy, width, height) {
+      var btnWidth = _this4.props.buttonWidth || (width/5);
       _this4.setState({
         btnWidth,
         btnsLeftWidth: _this4.props.left ? btnWidth * _this4.props.left.length : 0
